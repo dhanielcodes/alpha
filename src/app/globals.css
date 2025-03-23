@@ -8,19 +8,32 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-fig: var(--font-figtree);
+  --color-primary: #04142B;
+  --color-secondary: #0037FF;
+  --color-secondarytwo: #7191FF;
+  --color-tertiary: #667085;
+  --color-tabColor: #03217F;
+  --width-main: 1400px;
+  --max-width-main: 1400px;
+
+  --font-size-header: 5.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
+*{
+  @apply font-fig;
+}
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-fig);
 }
+
+
