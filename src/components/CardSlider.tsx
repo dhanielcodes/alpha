@@ -105,7 +105,6 @@ const CardSlider = () => {
                 image={item.image}
               />
             </div>
-            itm-idx {index} - active-idx {activeIndex}
           </SwiperSlide>
         ))}
       </Swiper>
