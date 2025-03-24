@@ -16,7 +16,7 @@ const FeatureCard = ({
       <div className="flex lg:flex-row flex-col items-center justify-between lg:space-x-6 ">
         <div className="lg:w-1/2 w-full lg:space-y-8 space-y-4 lg:pb-10 lg:px-0 lg:pt-0 pt-6 px-6">
           <p className="text-tertiary text-lg font-medium">{title}</p>
-          <h2 className="text-primary text-[2.6vw] font-semibold leading-[3vw]">
+          <h2 className="text-primary text-[2.6vw] xl:text-5xl font-semibold leading-[3vw] xl:leading-14">
             {description}
           </h2>
           <AppButton
