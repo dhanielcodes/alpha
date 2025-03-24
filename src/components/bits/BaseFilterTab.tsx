@@ -31,11 +31,11 @@ const BaseFilterTab: FC<BaseFilterTabProps> = ({
               onTabClick(idx);
             }
           }}
-          className={`px-4 py-2 text-primary text-center rounded-lg w-fit cursor-pointer text-sm transition-all 
+          className={` px-4 py-2 text-primary text-center rounded-lg w-fit cursor-pointer text-sm transition-all 
             ${
               active === item.tab
                 ? "bg-tabColor text-white"
-                : "bg-transparent text-tertiary"
+                : "bg-transparent text-tertiary hover:bg-[#E4E4E7]"
             }`}
         >
           {item.name}
