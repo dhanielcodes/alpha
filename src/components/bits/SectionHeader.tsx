@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 interface SectionHeaderProps {
   title: string | React.ReactNode;
@@ -10,11 +11,33 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   description,
 }) => {
   return (
-    <div className="flex flex-col items-center justify-center space-y-4">
-      <h2 className="text-5xl font-semibold text-center">{title}</h2>
-      <p className="text-tertiary text-2xl text-center font-medium my-2">
+    <div className="space-y-4">
+      <motion.h2
+        initial={{ transform: "translateY(20%)", opacity: 0 }}
+        whileInView={{ transform: "translateY(0%)", opacity: 1 }}
+        transition={{
+          type: "spring",
+          bounce: 0.2,
+          duration: 0.8,
+          delay: 0.2,
+        }}
+        className="text-6xl text-black font-semibold text-center"
+      >
+        {title}
+      </motion.h2>
+      <motion.p
+        initial={{ transform: "translateY(20%)", opacity: 0 }}
+        whileInView={{ transform: "translateY(0%)", opacity: 1 }}
+        transition={{
+          type: "spring",
+          bounce: 0.2,
+          duration: 0.8,
+          delay: 0.2,
+        }}
+        className="text-tertiary text-2xl text-center font-medium my-2"
+      >
         {description}
-      </p>
+      </motion.p>
     </div>
   );
 };
