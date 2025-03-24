@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import SwiperCore from "swiper";
 import FeatureCard from "./FeatureCard";
 import BaseFilterTab from "./bits/BaseFilterTab";
+import useScreenSize from "@/hooks/useScreenSize";
 
 const CardSlider = () => {
   const swiperRef = useRef<SwiperCore | null>(null);
@@ -57,9 +58,11 @@ const CardSlider = () => {
 
   const [active, setActive] = useState<string>("market");
 
+  const { width } = useScreenSize();
+
   return (
     <div className="w-full mx-auto relative z-0">
-      <div className="max-w-main w-[90%] mx-auto mb-40">
+      <div className="max-w-main w-[90%] mx-auto mb-10 hidden lg:block">
         <BaseFilterTab
           setActive={setActive}
           onTabClick={(idx: number) => {
@@ -91,7 +94,16 @@ const CardSlider = () => {
         speed={1200}
       >
         {list.map((item, index) => (
-          <SwiperSlide key={index} style={{ width: "1100px" }}>
+          <SwiperSlide
+            key={index}
+            style={{
+              width: width > 1300 ? "1100px" : "70%",
+              height: "700px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <div
               style={{
                 transition: "all 0.5s",

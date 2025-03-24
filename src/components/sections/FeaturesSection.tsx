@@ -6,7 +6,7 @@ import CardSlider from "../CardSlider";
 const FeaturesSection: React.FC = () => {
   return (
     <div>
-      <div className="max-w-main w-[90%] mx-auto">
+      <div className="max-w-main w-[90%] mx-auto hidden">
         <SectionHeader
           title={
             <span>
