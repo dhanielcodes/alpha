@@ -1,19 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import SectionHeader from "../bits/SectionHeader";
-import BaseFilterTab from "../bits/BaseFilterTab";
-import FeatureCard from "../FeatureCard";
-import CardSlider from "../Swiper";
+import CardSlider from "../CardSlider";
 
 const FeaturesSection: React.FC = () => {
-  const [active, setActive] = useState<string>("market");
-  const tabList = [
-    { name: "Market Prediction", tab: "market" },
-    { name: "Finance", tab: "finance" },
-    { name: "Analytics", tab: "analytics" },
-    { name: "Content Generation", tab: "content" },
-    { name: "Customer Support", tab: "support" },
-  ];
   return (
     <div>
       <div className="max-w-main w-[90%] mx-auto">
@@ -32,10 +22,8 @@ const FeaturesSection: React.FC = () => {
           }
         />
         <br />
-        <BaseFilterTab setActive={setActive} active={active} tab={tabList} />
       </div>
-      <br />
-      <br />
+
       <CardSlider />
     </div>
   );

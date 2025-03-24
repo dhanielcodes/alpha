@@ -364,10 +364,43 @@ enhanced-resolve@^5.18.1:
     graceful-fs "^4.2.4"
     tapable "^2.2.0"
 
+ev-emitter@^2.0.0, ev-emitter@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/ev-emitter/-/ev-emitter-2.1.2.tgz#91737a2deae9fa95453e7e86cfae976f8c3ced38"
+  integrity sha512-jQ5Ql18hdCQ4qS+RCrbLfz1n+Pags27q5TwMKvZyhp5hh2UULUYZUy1keqj6k6SYsdqIYjnmz7xyyEY0V67B8Q==
+
+fizzy-ui-utils@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/fizzy-ui-utils/-/fizzy-ui-utils-3.0.0.tgz#cc5e876eea263d3d92828a3144745dbd7b972fc8"
+  integrity sha512-uJj38QFQiJ/KCio5tiZhwAjIbTXSIgzBCKdKVbaYfLS053F6z23Nb0o1ZoO9gnxOQWN7BCc35jsvrCtAq3gY9g==
+
+flickity@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/flickity/-/flickity-3.0.0.tgz#568d14d17acece85e08eddc2589c968a458c8861"
+  integrity sha512-Xw4znhglA2LVSmka0yKmzb4+fLwXm13TuKmdG1HbUoZZL95J1ZMr4hAA3w69s+Z6q/c6CyBDM25JVwMqgF3rOg==
+  dependencies:
+    ev-emitter "^2.1.2"
+    fizzy-ui-utils "^3.0.0"
+    get-size "^3.0.0"
+    imagesloaded "^5.0.0"
+    unidragger "^3.0.0"
+
+get-size@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/get-size/-/get-size-3.0.0.tgz#00e39a8042a3de237b2fcf288eaf55d3f472417c"
+  integrity sha512-Y8aiXLq4leR7807UY0yuKEwif5s3kbVp1nTv+i4jBeoUzByTLKkLWu/HorS6/pB+7gsB0o7OTogC8AoOOeT0Hw==
+
 graceful-fs@^4.2.4:
   version "4.2.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
+
+imagesloaded@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/imagesloaded/-/imagesloaded-5.0.0.tgz#e614e5de482769dd7d571ca62d947d0d00183847"
+  integrity sha512-/0JGSubc1MTCoDKVmonLHgbifBWHdyLkun+R/151E1c5n79hiSxcd7cB7mPXFgojYu8xnRZv7GYxzKoxW8BetQ==
+  dependencies:
+    ev-emitter "^2.1.2"
 
 is-arrayish@^0.3.1:
   version "0.3.2"
@@ -498,6 +531,13 @@ postcss@^8.4.41:
     picocolors "^1.1.1"
     source-map-js "^1.2.1"
 
+react-alice-carousel@^2.9.1:
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/react-alice-carousel/-/react-alice-carousel-2.9.1.tgz#670c6d2fae401b8e924eb512ee6358964675a19c"
+  integrity sha512-/wQE4cqogKL/db+SoiiRmdj5j6C9I31pfzrmz8nuXmWmSl/UxxJz/O92W/ryxicTw1au+3mUW+drU3ZAhF3JPA==
+  dependencies:
+    vanilla-swipe "^2.4.1"
+
 react-dom@^19.0.0:
   version "19.0.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-19.0.0.tgz#43446f1f01c65a4cd7f7588083e686a6726cfb57"
@@ -607,3 +647,15 @@ undici-types@~6.19.2:
   version "6.19.8"
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.19.8.tgz#35111c9d1437ab83a7cdc0abae2f26d88eda0a02"
   integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==
+
+unidragger@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/unidragger/-/unidragger-3.0.1.tgz#72b2e63f2571ca6e95a884b139dfec764e08c7f3"
+  integrity sha512-RngbGSwBFmqGBWjkaH+yB677uzR95blSQyxq6hYbrQCejH3Mx1nm8DVOuh3M9k2fQyTstWUG5qlgCnNqV/9jVw==
+  dependencies:
+    ev-emitter "^2.0.0"
+
+vanilla-swipe@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/vanilla-swipe/-/vanilla-swipe-2.4.1.tgz#697d58bde3729db3c80fd3de488a54a8eae05664"
+  integrity sha512-o6pfI0dipet88ZnPLV4Jx04Ia+U3xANh14vhROW2TOe/mrwk2JGG68+Z0BPoD1YUcQQEnK4SZBXkqFe+K1l7/w==

@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@import "react-alice-carousel/lib/alice-carousel.css";
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -36,4 +36,7 @@ body {
   font-family: var(--font-fig);
 }
 
+.swiper {
+ position: relative;
+}
 
