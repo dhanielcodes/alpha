@@ -20,7 +20,7 @@ const Marquee = ({
   }, [children]);
 
   return (
-    <div className="relative w-full text-white py-2 h-fit">
+    <div className="relative w-full overflow-hidden text-white py-2 h-fit">
       <div
         ref={marqueeRef}
         className={`flex whitespace-nowrap absolute ${
