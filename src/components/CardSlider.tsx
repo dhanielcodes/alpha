@@ -98,7 +98,7 @@ const CardSlider = () => {
             key={index}
             style={{
               width: width > 1300 ? "1100px" : "70%",
-              height: "700px",
+              height: "800px",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
