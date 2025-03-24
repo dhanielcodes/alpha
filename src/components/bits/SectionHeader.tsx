@@ -21,7 +21,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
           duration: 0.8,
           delay: 0.2,
         }}
-        className="text-6xl text-black font-semibold text-center"
+        className="text-4xl lg:text-6xl text-black font-semibold text-center"
       >
         {title}
       </motion.h2>
@@ -34,7 +34,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
           duration: 0.8,
           delay: 0.2,
         }}
-        className="text-tertiary text-2xl text-center font-medium my-2"
+        className="text-tertiary text-base lg:text-2xl text-center font-medium my-2"
       >
         {description}
       </motion.p>
